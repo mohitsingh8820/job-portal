@@ -1,296 +1,171 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Trending Job Opportunities</title>
+<div class="job-container">
 
-  <style>
+  <!-- Job 1 -->
+  <div class="job-card">
 
-    *{
-      margin:0;
-      padding:0;
-      box-sizing:border-box;
-      font-family: Arial, sans-serif;
-    }
+    <h2>Computer Operator</h2>
 
-    body{
-      background:#f4f7fb;
-      padding:40px;
-    }
+    <span class="company">
+      RK Enterprises • Delhi
+    </span>
 
-    .title{
-      text-align:center;
-      margin-bottom:50px;
-    }
+    <p>
+      Looking for a computer operator who can handle basic office work,
+      MS Word, internet browsing, printing, and data management.
+    </p>
 
-    .title h1{
-      font-size:42px;
-      color:#111827;
-      margin-bottom:10px;
-    }
+    <ul class="details">
+      <li>✔ Full Time Job</li>
+      <li>✔ Freshers Can Apply</li>
+      <li>✔ Basic Computer Knowledge Required</li>
+    </ul>
 
-    .title p{
-      color:#6b7280;
-      font-size:18px;
-    }
-
-    /* 3 Cards Per Row */
-    .job-container{
-      display:grid;
-      grid-template-columns:repeat(3, 1fr);
-      gap:30px;
-    }
-
-    .job-card{
-      background:#fff;
-      border-radius:18px;
-      padding:28px;
-      box-shadow:0 8px 20px rgba(0,0,0,0.08);
-      transition:0.3s;
-      position:relative;
-      overflow:hidden;
-    }
-
-    .job-card:hover{
-      transform:translateY(-10px);
-    }
-
-    .tag{
-      position:absolute;
-      top:15px;
-      right:15px;
-      background:#2563eb;
-      color:white;
-      padding:6px 12px;
-      border-radius:20px;
-      font-size:12px;
-      font-weight:bold;
-    }
-
-    .job-card h2{
-      color:#111827;
-      margin-bottom:15px;
-      font-size:28px;
-    }
-
-    .company{
-      color:#2563eb;
-      font-weight:bold;
-      margin-bottom:15px;
-      display:block;
-    }
-
-    .job-card p{
-      color:#4b5563;
-      line-height:1.7;
-      margin-bottom:18px;
-    }
-
-    .details{
-      margin-bottom:18px;
-    }
-
-    .details li{
-      margin-bottom:10px;
-      color:#374151;
-    }
-
-    .salary{
-      font-size:24px;
-      color:#16a34a;
-      font-weight:bold;
-      margin-bottom:20px;
-    }
-
-    .apply-btn{
-      display:inline-block;
-      width:100%;
-      text-align:center;
-      background:#2563eb;
-      color:white;
-      text-decoration:none;
-      padding:14px;
-      border-radius:10px;
-      font-weight:bold;
-      transition:0.3s;
-    }
-
-    .apply-btn:hover{
-      background:#1d4ed8;
-    }
-
-    /* Responsive */
-
-    @media(max-width:992px){
-      .job-container{
-        grid-template-columns:repeat(2,1fr);
-      }
-    }
-
-    @media(max-width:600px){
-      .job-container{
-        grid-template-columns:1fr;
-      }
-    }
-
-  </style>
-</head>
-
-<body>
-
-  <div class="title">
-    <h1>🔥 Trending High Demand Jobs</h1>
-    <p>Apply for the latest professional jobs with attractive monthly salaries.</p>
-  </div>
-
-  <div class="job-container">
-
-    <!-- Job 1 -->
-    <div class="job-card">
-      <div class="tag">Hot Job</div>
-
-      <h2>Full Stack Developer</h2>
-
-      <span class="company">TechNova Solutions</span>
-
-      <p>
-        Build modern websites and web applications using HTML, CSS,
-        JavaScript, React, Node.js, and databases.
-      </p>
-
-      <ul class="details">
-        <li>✔ Remote Work Available</li>
-        <li>✔ 1-3 Years Experience</li>
-        <li>✔ Flexible Working Hours</li>
-      </ul>
-
-      <div class="salary">₹65,000 / Month</div>
-
-      <a href="#" class="apply-btn">Apply Now</a>
+    <div class="salary">
+      ₹15,000 - ₹18,000 / Month
     </div>
 
-    <!-- Job 2 -->
-    <div class="job-card">
-      <div class="tag">Trending</div>
-
-      <h2>UI/UX Designer</h2>
-
-      <span class="company">Creative Pixel Studio</span>
-
-      <p>
-        Design mobile apps and websites with modern user interfaces
-        and amazing customer experiences.
-      </p>
-
-      <ul class="details">
-        <li>✔ Figma & Adobe XD</li>
-        <li>✔ Creative Design Skills</li>
-        <li>✔ Portfolio Required</li>
-      </ul>
-
-      <div class="salary">₹50,000 / Month</div>
-
-      <a href="#" class="apply-btn">Apply Now</a>
-    </div>
-
-    <!-- Job 3 -->
-    <div class="job-card">
-      <div class="tag">Popular</div>
-
-      <h2>Digital Marketing Expert</h2>
-
-      <span class="company">Growth Media Agency</span>
-
-      <p>
-        Handle SEO, Google Ads, YouTube promotions,
-        social media marketing, and lead generation.
-      </p>
-
-      <ul class="details">
-        <li>✔ Social Media Campaigns</li>
-        <li>✔ SEO Optimization</li>
-        <li>✔ Google Ads Experience</li>
-      </ul>
-
-      <div class="salary">₹48,000 / Month</div>
-
-      <a href="#" class="apply-btn">Apply Now</a>
-    </div>
-
-    <!-- Job 4 -->
-    <div class="job-card">
-      <div class="tag">High Salary</div>
-
-      <h2>Data Analyst</h2>
-
-      <span class="company">DataVision Pvt Ltd</span>
-
-      <p>
-        Analyze business data using Excel, Power BI,
-        SQL, and reporting tools for company growth.
-      </p>
-
-      <ul class="details">
-        <li>✔ Advanced Excel Skills</li>
-        <li>✔ Power BI Dashboard</li>
-        <li>✔ Data Reporting</li>
-      </ul>
-
-      <div class="salary">₹58,000 / Month</div>
-
-      <a href="#" class="apply-btn">Apply Now</a>
-    </div>
-
-    <!-- Job 5 -->
-    <div class="job-card">
-      <div class="tag">Most Wanted</div>
-
-      <h2>Graphic Designer</h2>
-
-      <span class="company">Brandify Media</span>
-
-      <p>
-        Create logos, banners, reels thumbnails,
-        social media creatives, and ad designs.
-      </p>
-
-      <ul class="details">
-        <li>✔ Photoshop & Illustrator</li>
-        <li>✔ Social Media Design</li>
-        <li>✔ Creative Thinking</li>
-      </ul>
-
-      <div class="salary">₹42,000 / Month</div>
-
-      <a href="#" class="apply-btn">Apply Now</a>
-    </div>
-
-    <!-- Job 6 -->
-    <div class="job-card">
-      <div class="tag">Remote</div>
-
-      <h2>Content Writer</h2>
-
-      <span class="company">SmartBlogs Network</span>
-
-      <p>
-        Write SEO-friendly blogs, website content,
-        product descriptions, and marketing articles.
-      </p>
-
-      <ul class="details">
-        <li>✔ Work From Home</li>
-        <li>✔ English Writing Skills</li>
-        <li>✔ SEO Knowledge Preferred</li>
-      </ul>
-
-      <div class="salary">₹38,000 / Month</div>
-
-      <a href="#" class="apply-btn">Apply Now</a>
-    </div>
+    <a href="#" class="apply-btn">Apply Now</a>
 
   </div>
 
-</body>
-</html>
+  <!-- Job 2 -->
+  <div class="job-card">
+
+    <h2>Excel Operator</h2>
+
+    <span class="company">
+      Shree Balaji Services • Noida
+    </span>
+
+    <p>
+      Need an Excel operator for billing work, report handling,
+      spreadsheet updates, and office data entry work.
+    </p>
+
+    <ul class="details">
+      <li>✔ Day Shift</li>
+      <li>✔ Basic Excel Knowledge</li>
+      <li>✔ 12th Pass Can Apply</li>
+    </ul>
+
+    <div class="salary">
+      ₹18,000 - ₹22,000 / Month
+    </div>
+
+    <a href="#" class="apply-btn">Apply Now</a>
+
+  </div>
+
+  <!-- Job 3 -->
+  <div class="job-card">
+
+    <h2>Data Entry Operator</h2>
+
+    <span class="company">
+      Star Infotech • Gurgaon
+    </span>
+
+    <p>
+      Urgent hiring for data entry operator.
+      Candidate should have typing knowledge and basic computer skills.
+    </p>
+
+    <ul class="details">
+      <li>✔ Work From Office</li>
+      <li>✔ Good Typing Speed</li>
+      <li>✔ Immediate Joining</li>
+    </ul>
+
+    <div class="salary">
+      ₹14,500 - ₹17,500 / Month
+    </div>
+
+    <a href="#" class="apply-btn">Apply Now</a>
+
+  </div>
+
+  <!-- Job 4 -->
+  <div class="job-card">
+
+    <h2>Web Designer</h2>
+
+    <span class="company">
+      Digital Wave Tech • Remote
+    </span>
+
+    <p>
+      Looking for a web designer who can create modern website layouts,
+      banners, and responsive webpage designs.
+    </p>
+
+    <ul class="details">
+      <li>✔ HTML & CSS Knowledge</li>
+      <li>✔ Work From Home Available</li>
+      <li>✔ Creative Mindset Required</li>
+    </ul>
+
+    <div class="salary">
+      ₹25,000 - ₹32,000 / Month
+    </div>
+
+    <a href="#" class="apply-btn">Apply Now</a>
+
+  </div>
+
+  <!-- Job 5 -->
+  <div class="job-card">
+
+    <h2>Graphic Designer</h2>
+
+    <span class="company">
+      Pixel Media Agency • Delhi
+    </span>
+
+    <p>
+      Need a graphic designer for social media posts,
+      logo creation, banners, and advertisement designs.
+    </p>
+
+    <ul class="details">
+      <li>✔ Photoshop & Canva Skills</li>
+      <li>✔ Full Time Position</li>
+      <li>✔ Freshers Welcome</li>
+    </ul>
+
+    <div class="salary">
+      ₹20,000 - ₹28,000 / Month
+    </div>
+
+    <a href="#" class="apply-btn">Apply Now</a>
+
+  </div>
+
+  <!-- Job 6 -->
+  <div class="job-card">
+
+    <h2>Digital Marketing Executive</h2>
+
+    <span class="company">
+      GrowFast Marketing • Noida
+    </span>
+
+    <p>
+      Hiring digital marketing executive for social media handling,
+      SEO work, online promotions, and lead generation.
+    </p>
+
+    <ul class="details">
+      <li>✔ Instagram & Facebook Knowledge</li>
+      <li>✔ Training Provided</li>
+      <li>✔ Immediate Hiring</li>
+    </ul>
+
+    <div class="salary">
+      ₹22,000 - ₹30,000 / Month
+    </div>
+
+    <a href="#" class="apply-btn">Apply Now</a>
+
+  </div>
+
+</div>
