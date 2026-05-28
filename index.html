@@ -1,31 +1,347 @@
-<!-- Salary Updates -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Job 1 -->
-<div class="salary">
-  ₹30,000 - ₹35,000 / Month
-</div>
+  <title>Latest Job Openings</title>
 
-<!-- Job 2 -->
-<div class="salary">
-  ₹32,000 - ₹38,000 / Month
-</div>
+  <style>
 
-<!-- Job 3 -->
-<div class="salary">
-  ₹30,000 - ₹36,000 / Month
-</div>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
 
-<!-- Job 4 -->
-<div class="salary">
-  ₹40,000 - ₹55,000 / Month
-</div>
+    body{
+      background:#f5f7fb;
+      padding:40px;
+    }
 
-<!-- Job 5 -->
-<div class="salary">
-  ₹35,000 - ₹45,000 / Month
-</div>
+    .heading{
+      text-align:center;
+      margin-bottom:50px;
+    }
 
-<!-- Job 6 -->
-<div class="salary">
-  ₹38,000 - ₹50,000 / Month
-</div>
+    .heading h1{
+      font-size:42px;
+      color:#111827;
+      margin-bottom:10px;
+    }
+
+    .heading p{
+      color:#6b7280;
+      font-size:18px;
+    }
+
+    /* Job Grid */
+
+    .job-container{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:25px;
+    }
+
+    /* Job Card */
+
+    .job-card{
+      background:#fff;
+      border-radius:15px;
+      padding:25px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.08);
+      transition:0.3s;
+      border:1px solid #e5e7eb;
+    }
+
+    .job-card:hover{
+      transform:translateY(-8px);
+      box-shadow:0 10px 25px rgba(0,0,0,0.12);
+    }
+
+    .job-card h2{
+      color:#111827;
+      font-size:26px;
+      margin-bottom:10px;
+    }
+
+    .company{
+      display:block;
+      color:#2563eb;
+      font-size:15px;
+      font-weight:bold;
+      margin-bottom:15px;
+    }
+
+    .job-card p{
+      color:#4b5563;
+      font-size:15px;
+      line-height:1.7;
+      margin-bottom:18px;
+    }
+
+    .details{
+      padding-left:18px;
+      margin-bottom:20px;
+    }
+
+    .details li{
+      margin-bottom:10px;
+      color:#374151;
+      font-size:15px;
+    }
+
+    .salary{
+      font-size:24px;
+      color:#16a34a;
+      font-weight:bold;
+      margin-bottom:20px;
+    }
+
+    .apply-btn{
+      display:block;
+      text-align:center;
+      background:#2563eb;
+      color:#fff;
+      text-decoration:none;
+      padding:14px;
+      border-radius:10px;
+      font-size:16px;
+      font-weight:bold;
+      transition:0.3s;
+    }
+
+    .apply-btn:hover{
+      background:#1d4ed8;
+    }
+
+    /* Responsive */
+
+    @media(max-width:992px){
+
+      .job-container{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+    }
+
+    @media(max-width:600px){
+
+      .job-container{
+        grid-template-columns:1fr;
+      }
+
+      body{
+        padding:20px;
+      }
+
+      .heading h1{
+        font-size:32px;
+      }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <div class="heading">
+    <h1>Latest Job Openings</h1>
+    <p>Trusted companies hiring for full time jobs. Apply now.</p>
+  </div>
+
+  <div class="job-container">
+
+    <!-- Job 1 -->
+
+    <div class="job-card">
+
+      <h2>Computer Operator</h2>
+
+      <span class="company">
+        RK Enterprises • Delhi
+      </span>
+
+      <p>
+        Looking for a computer operator who can handle office work,
+        MS Word, internet browsing, printing, and basic computer tasks.
+      </p>
+
+      <ul class="details">
+        <li>✔ Full Time Job</li>
+        <li>✔ Freshers Can Apply</li>
+        <li>✔ Basic Computer Knowledge</li>
+      </ul>
+
+      <div class="salary">
+        ₹30,000 - ₹35,000 / Month
+      </div>
+
+      <a href="#" class="apply-btn">
+        Apply Now
+      </a>
+
+    </div>
+
+    <!-- Job 2 -->
+
+    <div class="job-card">
+
+      <h2>Excel Operator</h2>
+
+      <span class="company">
+        Shree Balaji Services • Noida
+      </span>
+
+      <p>
+        Need an Excel operator for billing work,
+        spreadsheet handling, reports, and office data management.
+      </p>
+
+      <ul class="details">
+        <li>✔ Day Shift</li>
+        <li>✔ Basic Excel Skills</li>
+        <li>✔ 12th Pass Can Apply</li>
+      </ul>
+
+      <div class="salary">
+        ₹32,000 - ₹38,000 / Month
+      </div>
+
+      <a href="#" class="apply-btn">
+        Apply Now
+      </a>
+
+    </div>
+
+    <!-- Job 3 -->
+
+    <div class="job-card">
+
+      <h2>Data Entry Operator</h2>
+
+      <span class="company">
+        Star Infotech • Gurgaon
+      </span>
+
+      <p>
+        Urgent hiring for data entry operator.
+        Candidate should have typing speed and computer knowledge.
+      </p>
+
+      <ul class="details">
+        <li>✔ Work From Office</li>
+        <li>✔ Good Typing Speed</li>
+        <li>✔ Immediate Joining</li>
+      </ul>
+
+      <div class="salary">
+        ₹30,000 - ₹36,000 / Month
+      </div>
+
+      <a href="#" class="apply-btn">
+        Apply Now
+      </a>
+
+    </div>
+
+    <!-- Job 4 -->
+
+    <div class="job-card">
+
+      <h2>Web Designer</h2>
+
+      <span class="company">
+        Digital Wave Tech • Remote
+      </span>
+
+      <p>
+        Looking for a web designer who can create modern layouts,
+        landing pages, and responsive website designs.
+      </p>
+
+      <ul class="details">
+        <li>✔ HTML & CSS Knowledge</li>
+        <li>✔ Work From Home</li>
+        <li>✔ Creative Skills Required</li>
+      </ul>
+
+      <div class="salary">
+        ₹40,000 - ₹55,000 / Month
+      </div>
+
+      <a href="#" class="apply-btn">
+        Apply Now
+      </a>
+
+    </div>
+
+    <!-- Job 5 -->
+
+    <div class="job-card">
+
+      <h2>Graphic Designer</h2>
+
+      <span class="company">
+        Pixel Media Agency • Delhi
+      </span>
+
+      <p>
+        Need a graphic designer for social media posts,
+        logos, banners, and advertisement creatives.
+      </p>
+
+      <ul class="details">
+        <li>✔ Photoshop & Canva Skills</li>
+        <li>✔ Full Time Position</li>
+        <li>✔ Freshers Welcome</li>
+      </ul>
+
+      <div class="salary">
+        ₹35,000 - ₹45,000 / Month
+      </div>
+
+      <a href="#" class="apply-btn">
+        Apply Now
+      </a>
+
+    </div>
+
+    <!-- Job 6 -->
+
+    <div class="job-card">
+
+      <h2>Digital Marketing Executive</h2>
+
+      <span class="company">
+        GrowFast Marketing • Noida
+      </span>
+
+      <p>
+        Hiring digital marketing executive for social media handling,
+        SEO work, online promotions, and lead generation.
+      </p>
+
+      <ul class="details">
+        <li>✔ Instagram & Facebook Knowledge</li>
+        <li>✔ Training Provided</li>
+        <li>✔ Immediate Hiring</li>
+      </ul>
+
+      <div class="salary">
+        ₹38,000 - ₹50,000 / Month
+      </div>
+
+      <a href="#" class="apply-btn">
+        Apply Now
+      </a>
+
+    </div>
+
+  </div>
+
+</body>
+</html>
