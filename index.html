@@ -1,1 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Job Landing Page</title>
 
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+      font-family: Arial, sans-serif;
+    }
+
+    body{
+      background:#f4f7fb;
+      padding:40px;
+    }
+
+    .title{
+      text-align:center;
+      margin-bottom:40px;
+    }
+
+    .title h1{
+      font-size:40px;
+      color:#222;
+    }
+
+    .job-container{
+      display:grid;
+      grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+      gap:25px;
+    }
+
+    .job-card{
+      background:#fff;
+      padding:25px;
+      border-radius:15px;
+      box-shadow:0 5px 15px rgba(0,0,0,0.1);
+      transition:0.3s;
+    }
+
+    .job-card:hover{
+      transform:translateY(-8px);
+    }
+
+    .job-card h2{
+      color:#1e3a8a;
+      margin-bottom:15px;
+    }
+
+    .job-card p{
+      color:#555;
+      line-height:1.6;
+      margin-bottom:20px;
+    }
+
+    .salary{
+      font-size:22px;
+      font-weight:bold;
+      color:#16a34a;
+      margin-bottom:20px;
+    }
+
+    .apply-btn{
+      display:inline-block;
+      padding:10px 20px;
+      background:#2563eb;
+      color:white;
+      text-decoration:none;
+      border-radius:8px;
+    }
+
+    .apply-btn:hover{
+      background:#1d4ed8;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="title">
+    <h1>Latest Job Opportunities</h1>
+  </div>
+
+  <div class="job-container">
+
+    <div class="job-card">
+      <h2>Web Developer</h2>
+      <p>
+        Build responsive websites and work with modern technologies
+        like HTML, CSS, JavaScript, and React.
+      </p>
+      <div class="salary">₹35,000 / Month</div>
+      <a href="#" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="job-card">
+      <h2>Graphic Designer</h2>
+      <p>
+        Create social media posts, banners, logos, and branding
+        designs using Photoshop and Illustrator.
+      </p>
+      <div class="salary">₹28,000 / Month</div>
+      <a href="#" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="job-card">
+      <h2>Excel Operator</h2>
+      <p>
+        Manage company data, prepare reports, and analyze
+        spreadsheets using Microsoft Excel.
+      </p>
+      <div class="salary">₹20,000 / Month</div>
+      <a href="#" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="job-card">
+      <h2>Web Designing</h2>
+      <p>
+        Design attractive and user-friendly website layouts
+        with modern UI/UX concepts.
+      </p>
+      <div class="salary">₹30,000 / Month</div>
+      <a href="#" class="apply-btn">Apply Now</a>
+    </div>
+
+    <div class="job-card">
+      <h2>Digital Marketing</h2>
+      <p>
+        Handle SEO, social media marketing, Google Ads,
+        and online business promotions.
+      </p>
+      <div class="salary">₹32,000 / Month</div>
+      <a href="#" class="apply-btn">Apply Now</a>
+    </div>
+
+  </div>
+
+</body>
+</html>
